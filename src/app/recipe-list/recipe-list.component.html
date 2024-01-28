@@ -1,1 +1,11 @@
 <app-search-field (searchKey)="searchKey.set($event)" />
+
+@for (recipe of recipes; track recipe.id) {
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ recipe.name }}</mat-card-title>
+    <mat-card-subtitle>By: {{ recipe.chef }}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+<mat-divider />
+}

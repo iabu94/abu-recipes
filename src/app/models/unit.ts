@@ -1,0 +1,13 @@
+export enum Unit {
+  GRAM = 'GRAM',
+  KILOGRAM = 'KILOGRAM',
+  MILLILITER = 'MILLILITER',
+  LITER = 'LITER',
+  TEASPOON = 'TEASPOON',
+  TABLESPOON = 'TABLESPOON',
+  CUP = 'CUP',
+  PIECE = 'PIECE',
+  PINCH = 'PINCH',
+  DASH = 'DASH',
+  NONE = 'NONE',
+}
