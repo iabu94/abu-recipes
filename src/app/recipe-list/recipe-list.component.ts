@@ -6,7 +6,6 @@ import { SearchFieldComponent } from '../search-field/search-field.component';
   standalone: true,
   imports: [SearchFieldComponent],
   templateUrl: './recipe-list.component.html',
-  styleUrl: './recipe-list.component.scss',
 })
 export class RecipeListComponent {
   searchKey = signal<string>('');

@@ -22,7 +22,6 @@ import { debounceTime, distinctUntilChanged } from 'rxjs';
     ReactiveFormsModule,
   ],
   templateUrl: './search-field.component.html',
-  styleUrl: './search-field.component.scss',
 })
 export class SearchFieldComponent {
   formControl = new FormControl('', [Validators.required]);
