@@ -1,6 +1,6 @@
 <app-search-field (searchKey)="searchKey.set($event)" />
 
-@for (recipe of recipes; track recipe.id) {
+@for (recipe of recipes$ | async; track recipe.id) {
 <mat-card>
   <mat-card-header>
     <mat-card-title>{{ recipe.name }}</mat-card-title>
@@ -9,5 +9,3 @@
 </mat-card>
 <mat-divider />
 }
-
-{{ item$ | async | json }}

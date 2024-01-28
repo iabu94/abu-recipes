@@ -1,3 +1,3 @@
-export enum EntityCollection {
+export enum Reference {
   RECIPES = 'recipes',
 }
