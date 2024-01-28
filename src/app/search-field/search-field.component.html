@@ -1,0 +1,21 @@
+<div class="flex flex-col">
+  <mat-form-field class="">
+    <mat-label>Enter the text to search</mat-label>
+    <input
+      matInput
+      type="text"
+      [formControl]="formControl"
+      autocomplete="off"
+    />
+    @if (formControl.value) {
+    <button
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="formControl.setValue('')"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    }
+  </mat-form-field>
+</div>
